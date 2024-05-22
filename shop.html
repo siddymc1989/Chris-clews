@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Mr Clews</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Mr Clews Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Shop Our Products</h2>
+        <div class="shop-items">
+            <div class="product">
+                <img src="images/product1.jpg" alt="Product 1">
+                <h3>Commercial Refrigerator 1</h3>
+                <p>High efficiency and durability.</p>
+                <button class="buy-button" data-product="Commercial Refrigerator 1" data-price="1500">Buy Now - £1500</button>
+            </div>
+            <div class="product">
+                <img src="images/product2.jpg" alt="Product 2">
+                <h3>Commercial Refrigerator 2</h3>
+                <p>Advanced cooling technology.</p>
+                <button class="buy-button" data-product="Commercial Refrigerator 2" data-price="1800">Buy Now - £1800</button>
+            </div>
+            <div class="product">
+                <img src="images/product3.jpg" alt="Product 3">
+                <h3>Commercial Refrigerator 3</h3>
+                <p>Large capacity and energy-saving.</p>
+                <button class="buy-button" data-product="Commercial Refrigerator 3" data-price="2000">Buy Now - £2000</button>
+            </div>
+        </div>
+        <div id="purchase-form-container" class="hidden">
+            <h3>Complete Your Purchase</h3>
+            <form id="purchase-form">
+                <label for="product">Product:</label>
+                <input type="text" id="product" name="product" readonly>
+                <label for="price">Price:</label>
+                <input type="text" id="price" name="price" readonly>
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" required>
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="text" id="expiry-date" name="expiry-date" required>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+                <button type="submit">Purchase</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Follow us on <a href="ebay.html">eBay</a> and <a href="facebook.html">Facebook</a></p>
+    </footer>
+</body>
+</html>
